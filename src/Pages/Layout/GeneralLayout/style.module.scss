@@ -1,0 +1,31 @@
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+.general-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  .content-container {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    // padding: 1rem;
+
+    @media (max-width: $breakpoint-sm) {
+    //   padding: 0.5rem;
+    padding: 0; 
+    }
+
+    @media (min-width: $breakpoint-xl) {
+    //   padding: 2rem; 
+    padding: 0;
+    }
+  }
+}

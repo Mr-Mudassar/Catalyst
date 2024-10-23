@@ -1,0 +1,16 @@
+#TopBar {
+  min-height: 10vh;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    .search {
+      .NavItemsss {
+        @media (max-width: 459px) {
+          width: 90vw;
+        }
+      }
+    }
+  }
+}

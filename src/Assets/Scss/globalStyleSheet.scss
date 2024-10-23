@@ -1,0 +1,185 @@
+@import "./variables.scss";
+
+@mixin bgProperties {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-yellow_light {
+  color: $lightestYellow !important;
+}
+
+.bgProperties {
+  @include bgProperties;
+}
+
+a {
+  list-style: none !important;
+  text-decoration: none !important;
+}
+
+.font-12 {
+  font-size: $font-12;
+}
+
+.font-11 {
+  font-size: $font-11;
+}
+
+.text-green {
+  color: $green !important;
+  // color: $green !important;
+}
+
+.text-yellow {
+  color: $yellow-golden !important;
+}
+
+.bg-green {
+  background-color: $green !important;
+}
+
+.bg-tan {
+  background-color: $tan !important;
+}
+
+.bg-darkgreen {
+  background-color: $darkgreen !important;
+}
+
+.text-darkgreen {
+  color: $darkgreen !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.text-gray {
+  color: $gray !important;
+}
+
+.errorField {
+  margin-bottom: 0 !important;
+  color: $orange;
+  font-size: $font-12;
+}
+
+.profile-edit-Icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 99;
+  border-radius: 100%;
+  right: 0;
+  bottom: 6px;
+}
+
+.react-tel-input,
+.select,
+.form-control,
+.form-control-lg {
+  &:focus,
+  &:focus-visible {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+.customDropdownRadius {
+  border-radius: 14px !important;
+}
+
+.customSelect {
+  select {
+    padding: 15px 15px !important;
+    color: $black !important;
+    font-size: 16px !important;
+
+    option {
+      &:hover {
+        background: $green !important;
+        color: $yellow-golden !important;
+      }
+
+      &:active {
+        background: $green !important;
+        color: $yellow-golden !important;
+      }
+    }
+  }
+}
+
+.react-tel-input {
+  border-radius: 14px;
+
+  .form-control-lg {
+    font-size: 16px !important;
+    border-radius: 14px !important;
+    border: 1px solid #dee2e6;
+    padding-left: 50px !important;
+
+    &:focus {
+      outline: none !important;
+    }
+  }
+
+  .flag-dropdown {
+    background-color: $content-bg !important;
+    border-top-left-radius: 14px !important;
+    border-bottom-left-radius: 14px !important;
+    border: none !important;
+
+    .selected-flag {
+      border-top-left-radius: 14px !important;
+      border-bottom-left-radius: 14px !important;
+
+      &:hover {
+        border-top-left-radius: 14px !important;
+        border-bottom-left-radius: 14px !important;
+      }
+    }
+  }
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.fetchDetailTag {
+  background-color: $green;
+  color: $white;
+  font-size: 10px;
+  padding: 2px 4px;
+  border-radius: 10px;
+}
+
+.custom-height {
+  height: 50px !important;
+}
+
+.custom-shadow {
+  border-radius: 20px;
+  box-shadow: 0px 3px 4px 2px rgba(0, 0, 0, 0.25);
+  padding: 20px !important;
+  margin: 10px;
+}
+
+.main-custom-search-width {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.custom-search-width {
+  width: 350px;
+}
+
+.lineHeight {
+  line-height: 15px !important;
+}

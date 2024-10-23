@@ -1,0 +1,30 @@
+@import "../../../Assets/Scss/variables.scss";
+
+.otpInput {
+  color: $green;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 14px;
+  border: 2px solid $green;
+  width: 60px !important;
+  height: calc(3.55rem + 2px);
+  transition: green 0.15s ease-in-out;
+
+  &:focus-visible {
+    border: 2px solid darkgreen;
+  }
+
+  @media (max-width: 820px) {
+    width: 44px !important;
+    height: 51px !important;
+  }
+  @media (max-width: 398px) {
+    width: 35px !important;
+    height: 35px !important;
+  }
+}
+
+.otpContainer {
+  display: flex !important;
+  justify-content: center !important;
+}

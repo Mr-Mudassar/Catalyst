@@ -1,0 +1,43 @@
+#GeneralLayout {
+  #GeneralRow {
+    #sidebar {
+      transition: all 0.5s ease-in;
+      z-index: 5;
+    }
+  }
+
+  #contentRow {
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    #content {
+      overflow: auto scroll; 
+      height: 88vh;
+      padding: 20px;
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: darkgrey; /* Ensure the handle has a color for visibility */
+      }
+    }
+  }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  #content {
+    height: 80vh; /* Adjust height for smaller screens */
+    padding: 10px;
+  }
+}

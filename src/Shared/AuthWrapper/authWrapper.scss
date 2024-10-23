@@ -1,0 +1,12 @@
+.AuthWrapper {
+  background-image: url("../../Assets/Images/Gallery/LayoutBackGround.png ");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  @media (max-width: "767px") {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
